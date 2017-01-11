@@ -50,11 +50,11 @@
                          <li class="dropdown">
                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastro <span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                            <li><a href="{{ url('/new_client') }}">Clientes</a></li>
-                               <li><a href="{{ url('/new_service') }}">Serviços</a></li>
-                               <li><a href="{{ url('/new_employee') }}">Funcionários</a></li> 
+                            <li><a href="{{ url('/client/new') }}">Clientes</a></li>
+                               <li><a href="{{ url('/service/new') }}">Serviços</a></li>
+                               <li><a href="{{ url('/employee/new') }}">Funcionários</a></li> 
                                <li role="separator" class="divider"></li>
-                               <li><a href="{{ url('/new_command') }}">Comandas</a></li> 
+                               <li><a href="{{ url('/command/new') }}">Comandas</a></li> 
                              </ul>
                          </li>
 

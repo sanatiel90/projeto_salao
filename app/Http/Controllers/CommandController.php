@@ -8,7 +8,7 @@ class CommandController extends Controller
 {
     
 	public function newCommand(){
-		return view('new.command');
+		return view('commands.add_command');
 	}
     
 }

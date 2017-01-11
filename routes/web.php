@@ -19,10 +19,38 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/new_client', 'ClientController@newClient');
-Route::get('/new_service', 'ServiceController@newService');
-Route::get('/new_command', 'CommandController@newCommand');
-Route::get('/new_employee', 'UserController@newUser');
+//rotas relacionadas a cliente
+Route::group(['prefix'=>'client'], function(){
+
+	Route::get('/new','ClientController@newClient');
+
+});
+
+//rotas relacionadas a funcionario
+Route::group(['prefix' => 'employee'], function(){
+
+	Route::get('/new', 'UserController@newUser');
+
+});
+
+
+//rotas relacionadas a servicos
+Route::group(['prefix' => 'service'], function(){
+
+	Route::get('/new', 'ServiceController@newService');
+
+});
+
+
+//rotas relacionadas a comandas
+Route::group(['prefix' => 'command'], function(){
+
+	Route::get('/new', 'CommandController@newCommand');
+
+});
+
+
+
 
 
 

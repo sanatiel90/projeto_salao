@@ -8,7 +8,7 @@ class UserController extends Controller
 {
 
 	public function newUser(){
-		return view('new.employee');
+		return view('employees.add_employee');
 	}	
     
 }

@@ -9,7 +9,7 @@ class ClientController extends Controller
     
 	public function newClient(){
 
-		return view('new.client');
+		return view('clients.add_client');
 	}
 
 }

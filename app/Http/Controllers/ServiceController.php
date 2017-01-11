@@ -8,7 +8,7 @@ class ServiceController extends Controller
 {
     
 	public function newService(){
-		    return view('new.service');
+		    return view('services.add_service');
 
 	}
 }
