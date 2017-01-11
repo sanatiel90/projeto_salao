@@ -72,23 +72,20 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                       <!-- <a href="{{ url('/register') }}">Register</a> -->
                     @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Projeto Salão
                 </div>
+                
+                
+                <h3>Bem vindo ao sistema o Projeto Salão, realize o login para entrar</h3> 
+                <h2><a style="text-decoration:none" href="{{ url ('/login') }}">Ir para Login</a></h2>  
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
         </div>
     </body>
